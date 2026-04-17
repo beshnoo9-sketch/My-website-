@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Beshnoo Video Hub</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #0f172a;
-      color: white;
-    }
-    header {
-      text-align: center;
-      padding: 40px;
-      background: #020617;
-    }
-    h1 {margin:0;}
-    .container {
-      padding: 20px;
-    }
-    .video {
-      margin: 20px 0;
-    }
-    iframe {
-      width: 100%;
-      height: 220px;
-      border-radius: 10px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #22c55e;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+    <title>My Marketing Website</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🎬 Beshnoo Video Hub</h1>
-  <p>Learn & Earn with Viral Videos</p>
-  <a class="btn" href="#">Start Earning</a>
+    <h1>My Marketing Website</h1>
 </header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Videos</a>
+    <a href="#">Contact</a>
+</nav>
 
 <div class="container">
 
-  <h2>🔥 Latest Videos</h2>
+    <div class="card">
+        <h2>🔥 Best Product</h2>
+        <p>Buy this amazing product now!</p>
+        <a href="YOUR_AFFILIATE_LINK">
+            <button>Buy Now</button>
+        </a>
+    </div>
 
-  <!-- Video 1 -->
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID1"
-    allowfullscreen></iframe>
-  </div>
-
-  <!-- Video 2 -->
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID2"
-    allowfullscreen></iframe>
-  </div>
-
-  <!-- Video 3 -->
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID3"
-    allowfullscreen></iframe>
-  </div>
+    <div class="card">
+        <h2>🎬 Watch Video</h2>
+        <iframe width="100%" height="250"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+        </iframe>
+    </div>
 
 </div>
 
