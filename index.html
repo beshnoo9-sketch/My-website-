@@ -2,50 +2,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Beshnoo Video Hub</title>
+    <title>Beshnoo Pro Video Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+            background: #0f172a;
             color: white;
-            text-align: center;
         }
 
         header {
-            background: black;
+            background: #020617;
             padding: 15px;
-            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: #38bdf8;
         }
 
         .container {
-            padding: 20px;
+            padding: 15px;
         }
 
-        .video-box {
-            background: white;
-            color: black;
-            padding: 15px;
-            margin: 20px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 10px;
             border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
         }
 
         iframe {
             width: 100%;
-            height: 200px;
+            height: 180px;
             border-radius: 10px;
         }
 
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: red;
-            color: white;
-            text-decoration: none;
+            display: block;
+            text-align: center;
+            background: #38bdf8;
+            padding: 8px;
             border-radius: 5px;
             margin-top: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #020617;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -53,28 +86,45 @@
 <body>
 
 <header>
-    🔥 Beshnoo Video Hub 🔥
+    <h1>🔥 Beshnoo Hub</h1>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Videos</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <div class="container">
+    <h2>Trending Videos</h2>
 
-    <h2>Watch Trending Videos</h2>
+    <div class="grid">
 
-    <div class="video-box">
-        <h3>YouTube Video</h3>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-        <br>
-        <a href="#" class="btn">Watch More</a>
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+            <a href="#" class="btn">Watch Now</a>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <a href="#" class="btn">Watch Now</a>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ"></iframe>
+            <a href="#" class="btn">Watch Now</a>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0"></iframe>
+            <a href="#" class="btn">Watch Now</a>
+        </div>
+
     </div>
-
-    <div class="video-box">
-        <h3>Facebook Video</h3>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/10153231379946729/"></iframe>
-        <br>
-        <a href="#" class="btn">See More</a>
-    </div>
-
 </div>
+
+<footer>
+    © 2026 Beshnoo | All Rights Reserved
+</footer>
 
 </body>
 </html>
