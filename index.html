@@ -1,130 +1,74 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Beshnoo Pro Video Hub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-        }
-
-        header {
-            background: #020617;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
-
-        .nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-
-        .nav a:hover {
-            color: #38bdf8;
-        }
-
-        .container {
-            padding: 15px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 10px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        iframe {
-            width: 100%;
-            height: 180px;
-            border-radius: 10px;
-        }
-
-        .btn {
-            display: block;
-            text-align: center;
-            background: #38bdf8;
-            padding: 8px;
-            border-radius: 5px;
-            margin-top: 10px;
-            color: black;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #020617;
-            margin-top: 20px;
-        }
-    </style>
+  <title>Beshnoo Video Hub</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px;
+      background: #020617;
+    }
+    h1 {margin:0;}
+    .container {
+      padding: 20px;
+    }
+    .video {
+      margin: 20px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🔥 Beshnoo Hub</h1>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Videos</a>
-        <a href="#">Contact</a>
-    </div>
+  <h1>🎬 Beshnoo Video Hub</h1>
+  <p>Learn & Earn with Viral Videos</p>
+  <a class="btn" href="#">Start Earning</a>
 </header>
 
 <div class="container">
-    <h2>Trending Videos</h2>
 
-    <div class="grid">
+  <h2>🔥 Latest Videos</h2>
 
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-            <a href="#" class="btn">Watch Now</a>
-        </div>
+  <!-- Video 1 -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID1"
+    allowfullscreen></iframe>
+  </div>
 
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            <a href="#" class="btn">Watch Now</a>
-        </div>
+  <!-- Video 2 -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID2"
+    allowfullscreen></iframe>
+  </div>
 
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ"></iframe>
-            <a href="#" class="btn">Watch Now</a>
-        </div>
+  <!-- Video 3 -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID3"
+    allowfullscreen></iframe>
+  </div>
 
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0"></iframe>
-            <a href="#" class="btn">Watch Now</a>
-        </div>
-
-    </div>
 </div>
-
-<footer>
-    © 2026 Beshnoo | All Rights Reserved
-</footer>
 
 </body>
 </html>
