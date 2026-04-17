@@ -1,17 +1,80 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Video Website</title>
+    <title>Beshnoo Video Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: black;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .video-box {
+            background: white;
+            color: black;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:Arial;">
 
-    <h1>Welcome to My Website</h1>
-    <p>Video dekhar jonno niche click koro</p>
+<body>
 
-    <h2>YouTube Video</h2>
-    <iframe width="300" height="200"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ">
-    </iframe>
+<header>
+    🔥 Beshnoo Video Hub 🔥
+</header>
+
+<div class="container">
+
+    <h2>Watch Trending Videos</h2>
+
+    <div class="video-box">
+        <h3>YouTube Video</h3>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+        <br>
+        <a href="#" class="btn">Watch More</a>
+    </div>
+
+    <div class="video-box">
+        <h3>Facebook Video</h3>
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/10153231379946729/"></iframe>
+        <br>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+</div>
 
 </body>
 </html>
